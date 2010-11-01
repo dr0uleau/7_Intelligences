@@ -204,6 +204,7 @@
             this.barSpatial.BackColor = System.Drawing.Color.Lime;
             this.barSpatial.LargeChange = 2;
             this.barSpatial.Location = new System.Drawing.Point(12, 53);
+            this.barSpatial.Maximum = 100;
             this.barSpatial.Name = "barSpatial";
             this.barSpatial.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.barSpatial.Size = new System.Drawing.Size(45, 328);
@@ -215,6 +216,7 @@
             this.barLinguistic.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.barLinguistic.LargeChange = 2;
             this.barLinguistic.Location = new System.Drawing.Point(122, 53);
+            this.barLinguistic.Maximum = 100;
             this.barLinguistic.Name = "barLinguistic";
             this.barLinguistic.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.barLinguistic.Size = new System.Drawing.Size(45, 328);
@@ -226,6 +228,7 @@
             this.barLogical.BackColor = System.Drawing.Color.Red;
             this.barLogical.LargeChange = 2;
             this.barLogical.Location = new System.Drawing.Point(232, 53);
+            this.barLogical.Maximum = 100;
             this.barLogical.Name = "barLogical";
             this.barLogical.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.barLogical.Size = new System.Drawing.Size(45, 328);
@@ -237,6 +240,7 @@
             this.barKinesthetic.BackColor = System.Drawing.Color.PeachPuff;
             this.barKinesthetic.LargeChange = 2;
             this.barKinesthetic.Location = new System.Drawing.Point(342, 53);
+            this.barKinesthetic.Maximum = 100;
             this.barKinesthetic.Name = "barKinesthetic";
             this.barKinesthetic.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.barKinesthetic.Size = new System.Drawing.Size(45, 328);
@@ -248,6 +252,7 @@
             this.barMusical.BackColor = System.Drawing.Color.Violet;
             this.barMusical.LargeChange = 2;
             this.barMusical.Location = new System.Drawing.Point(452, 53);
+            this.barMusical.Maximum = 100;
             this.barMusical.Name = "barMusical";
             this.barMusical.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.barMusical.Size = new System.Drawing.Size(45, 328);
@@ -259,6 +264,7 @@
             this.barInterpersonal.BackColor = System.Drawing.Color.Silver;
             this.barInterpersonal.LargeChange = 2;
             this.barInterpersonal.Location = new System.Drawing.Point(562, 53);
+            this.barInterpersonal.Maximum = 100;
             this.barInterpersonal.Name = "barInterpersonal";
             this.barInterpersonal.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.barInterpersonal.Size = new System.Drawing.Size(45, 328);
@@ -268,8 +274,9 @@
             // barIntrapersonal
             // 
             this.barIntrapersonal.BackColor = System.Drawing.Color.Black;
-            this.barIntrapersonal.LargeChange = 2;
+            this.barIntrapersonal.LargeChange = 10;
             this.barIntrapersonal.Location = new System.Drawing.Point(672, 53);
+            this.barIntrapersonal.Maximum = 100;
             this.barIntrapersonal.Name = "barIntrapersonal";
             this.barIntrapersonal.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.barIntrapersonal.Size = new System.Drawing.Size(45, 328);
