@@ -94,7 +94,7 @@ namespace _7_Intelligences
             setScale.ShowDialog();
 
             // If the time scale changes, set the new time scale, reset the time, and reset the timer
-            if (timeScale != setScale.TimeScale)
+            if (timeScale != setScale.TimeScale && setScale.TimeScale != 0)
             {
                 timeScale = setScale.TimeScale;
                 oldTime = DateTime.Now;

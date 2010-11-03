@@ -38,5 +38,12 @@ namespace _7_Intelligences
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            // If cancel is hit, don't change any data
+            timeScale = 0;
+            Close();
+        }
     }
 }
