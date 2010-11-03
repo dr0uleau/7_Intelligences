@@ -1009,6 +1009,7 @@
             this.Name = "Form1";
             this.Text = "7 Intelligences";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_Closing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barSpatial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barLinguistic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barLogical)).EndInit();

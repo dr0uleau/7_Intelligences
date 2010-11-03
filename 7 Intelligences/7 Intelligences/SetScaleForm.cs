@@ -11,6 +11,14 @@ namespace _7_Intelligences
 {
     public partial class SetScaleForm : Form
     {
+        private int timeScale;
+
+        public int TimeScale
+        {
+            get { return timeScale; }
+            set { timeScale = value; }
+        }
+
         public SetScaleForm()
         {
             InitializeComponent();
@@ -18,11 +26,10 @@ namespace _7_Intelligences
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            int timeScaleInt = 0;
-            string timeScale = txtTimeScale.Text;
-            if (int.TryParse(timeScale, out timeScaleInt))
+            string timeScaleStr = txtTimeScale.Text;
+            // Set time scale to timeScale
+            if (int.TryParse(timeScaleStr, out timeScale))
             {
-                // Set time scale to timeScaleInt
                 Close();
             }
             else
