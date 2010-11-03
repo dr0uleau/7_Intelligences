@@ -104,6 +104,11 @@ namespace _7_Intelligences
 
         private void Form1_Closing(object sender, FormClosingEventArgs e)
         {
+            saveData();
+        }
+
+        private void saveData()
+        {
             StreamWriter sw = null;
             try
             {
@@ -111,9 +116,9 @@ namespace _7_Intelligences
                 sw = new StreamWriter(path);
 
                 // Write the date and each value of each bar control
-                sw.WriteLine(timeScale + "\t" + DateTime.Now + "\t" + barSpatial.Value.ToString() + "\t" + 
-                    barLinguistic.Value.ToString() +"\t" + barLogical.Value.ToString() + "\t" + 
-                    barKinesthetic.Value.ToString() + "\t" + barMusical.Value.ToString() + "\t" + 
+                sw.WriteLine(timeScale + "\t" + DateTime.Now + "\t" + barSpatial.Value.ToString() + "\t" +
+                    barLinguistic.Value.ToString() + "\t" + barLogical.Value.ToString() + "\t" +
+                    barKinesthetic.Value.ToString() + "\t" + barMusical.Value.ToString() + "\t" +
                     barInterpersonal.Value.ToString() + "\t" + barIntrapersonal.Value.ToString());
             }
             catch (Exception ex)
@@ -122,7 +127,8 @@ namespace _7_Intelligences
             }
             finally
             {
-                if(sw != null) {
+                if (sw != null)
+                {
                     sw.Close();
                 }
             }
